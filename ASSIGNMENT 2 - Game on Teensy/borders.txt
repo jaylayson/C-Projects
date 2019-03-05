@@ -1,0 +1,25 @@
+      if (Missile.y <= 9) {
+        clear_screen();
+        shoot = false;
+        Missile.x = Spacecraft.x + 3;
+        Missile.y = Spacecraft.y - 1;
+      }
+
+      if (Missile.y == LCD_Y) {
+        clear_screen();
+        shoot = false;
+        Missile.x = Spacecraft.x + 3;
+        Missile.y = Spacecraft.y - 1;
+      }
+      if (Missile.x == LCD_X) {
+        clear_screen();
+        shoot = false;
+        Missile.x = Spacecraft.x + 3;
+        Missile.y = Spacecraft.y - 1;
+      }
+      if (Missile.x == 0) {
+        clear_screen();
+        shoot = false;
+        Missile.x = Spacecraft.x + 3;
+        Missile.y = Spacecraft.y - 1;
+      }
